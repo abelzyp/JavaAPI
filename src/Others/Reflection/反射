@@ -1,0 +1,8 @@
+Uses of Reflection
+Reflection is commonly used by programs which require the ability to examine or modify the runtime behavior of applications running in the Java virtual machine. This is a relatively advanced feature and should be used only by developers who have a strong grasp of the fundamentals of the language. With that caveat in mind, reflection is a powerful technique and can enable applications to perform operations which would otherwise be impossible.
+Extensibility Features
+An application may make use of external, user-defined classes by creating instances of extensibility objects using their fully-qualified names.
+Class Browsers and Visual Development Environments
+A class browser needs to be able to enumerate the members of classes. Visual development environments can benefit from making use of type information available in reflection to aid the developer in writing correct code.
+Debuggers and Test Tools
+Debuggers need to be able to examine private members on classes. Test harnesses can make use of reflection to systematically call a discoverable set APIs defined on a class, to insure a high level of code coverage in a test suite.
