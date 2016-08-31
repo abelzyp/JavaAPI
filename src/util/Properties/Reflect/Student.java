@@ -1,4 +1,4 @@
-package Others.Reflection.peizhiwenjian;
+package util.Properties.Reflect;
 
 public class Student {
 	public void love() {

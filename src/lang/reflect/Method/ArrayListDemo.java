@@ -1,4 +1,4 @@
-package Others.Reflection;
+package lang.reflect.Method;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -8,15 +8,15 @@ import java.util.ArrayList;
  * 我给你ArrayList<Integer>的一个对象，我想在这个集合中添加一个字符串数据，如何实现呢？
  */
 public class ArrayListDemo {
-	public static void main(String[] args) throws NoSuchMethodException,
-			SecurityException, IllegalAccessException,
+	public static void main(String[] args) throws NoSuchMethodException, SecurityException, IllegalAccessException,
 			IllegalArgumentException, InvocationTargetException {
 		// 创建集合对象
 		ArrayList<Integer> array = new ArrayList<Integer>();
 
-		// array.add("hello");
-		// array.add(10);
+		// 正常方法添加
+		array.add(10);
 
+		// 反射方法添加
 		Class c = array.getClass(); // 集合ArrayList的class文件对象
 		Method m = c.getMethod("add", Object.class);
 

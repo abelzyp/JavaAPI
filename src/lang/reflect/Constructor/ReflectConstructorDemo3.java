@@ -1,18 +1,18 @@
-package Others.Reflection.demo_02;
+package lang.reflect.Constructor;
 
 import java.lang.reflect.Constructor;
 
 /*
  * 需求：通过反射获取私有构造方法并使用
- * private Person(String name){}
+ * 		private Person(String name){}
  * 
  * Person p = new Person("风清扬");
  * System.out.println(p);
  */
-public class ReflectDemo3 {
+public class ReflectConstructorDemo3 {
 	public static void main(String[] args) throws Exception {
 		// 获取字节码文件对象
-		Class c = Class.forName("api.reflect.demo_01.Person");
+		Class c = Class.forName("lang.reflect.Reflect.Person");
 
 		// 获取私有构造方法对象
 		// NoSuchMethodException：每个这个方法异常

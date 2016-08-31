@@ -1,26 +1,35 @@
-package Others.Reflection.demo_03;
+package lang.reflect.Field;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 
+import lang.reflect.Reflect.Person;
+
 /*
  * 通过反射获取成员变量并使用
+ * 
+ * 获取所有的成员变量：
+ * 		public Field[] getFields():返回一个包含某些 Field对象的数组，这些对象反映此 Class对象所表示的类或接口的所有可访问公共字段。
+ * 		public Field[] getDeclaredFields():返回 Field对象的一个数组，这些对象反映此 Class对象所表示的类或接口所声明的所有字段。
+ * 获取单个的成员变量：
+ * 		public Field getField(String name):返回一个 Field对象，它反映此 Class对象所表示的类或接口的指定公共成员字段。
+ * 		public Field getDeclaredField(String name):返回一个 Field对象，该对象反映此 Class对象所表示的类或接口的指定已声明字段。
  */
-public class ReflectDemo {
+public class ReflectFieldDemo {
 	public static void main(String[] args) throws Exception {
 		// 获取字节码文件对象
-		Class c = Class.forName("api.reflect.demo_01.Person");
+		Class c = Class.forName("lang.reflect.Reflect.Person");
 
 		// 获取所有的成员变量
 		// Field[] fields = c.getFields();
-		// Field[] fields = c.getDeclaredFields();
-		// for (Field field : fields) {
-		// System.out.println(field);
-		// }
+		Field[] fields = c.getDeclaredFields();
+		for (Field field : fields) {
+			System.out.println(field);
+		}
 
-		/*
-		 * Person p = new Person(); p.address = "北京"; System.out.println(p);
-		 */
+		Person p = new Person();
+		p.address = "北京";
+		System.out.println(p);
 
 		// 通过无参构造方法创建对象
 		Constructor con = c.getConstructor();

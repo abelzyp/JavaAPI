@@ -1,31 +1,40 @@
-package Others.Reflection.demo_03;
+package lang.reflect.Method;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
-public class ReflectDemo2 {
+import lang.reflect.Reflect.Person;
+
+/*
+ * 通过反射获取成员方法并使用
+ * 
+ * 获取所有的方法：
+ * 		public Method[] getMethods():返回一个包含某些 Method对象的数组，这些对象反映此 Class对象所表示的类或接口的公共 member方法。
+ * 		public Method[] getDeclaredMethods():返回 Method对象的一个数组，这些对象反映此 Class对象表示的类或接口声明的所有方法，包括公共、保护、默认（包）访问和私有方法，但不包括继承的方法。
+ * 获取单个方法：
+ * 		public Method getMethod(String name,Class<?>... parameterTypes):返回一个包含某些 Method对象的数组，这些对象反映此 Class对象所表示的类或接口的公共 member方法。
+ * 		public Method getDeclaredMethod(String name,Class<?>... parameterTypes):返回一个 Method对象，该对象反映此 Class对象所表示的类或接口的指定已声明方法。
+ */
+public class ReflectMethodDemo {
 	public static void main(String[] args) throws Exception {
 		// 获取字节码文件对象
-		Class c = Class.forName("api.reflect.demo_01.Person");
+		Class c = Class.forName("lang.reflect.Reflect.Person");
 
 		// 获取所有的方法
 		// Method[] methods = c.getMethods(); // 获取自己的包括父亲的公共方法
-		// Method[] methods = c.getDeclaredMethods(); // 获取自己的所有的方法
-		// for (Method method : methods) {
-		// System.out.println(method);
-		// }
+		Method[] methods = c.getDeclaredMethods(); // 获取自己的所有的方法
+		for (Method method : methods) {
+			System.out.println(method);
+		}
 
 		Constructor con = c.getConstructor();
 		Object obj = con.newInstance();
 
-		/*
-		 * Person p = new Person(); p.show();
-		 */
+		Person p = new Person();
+		p.show();
 
 		// 获取单个方法并使用
 		// public void show()
-		// public Method getMethod(String name,Class<?>... parameterTypes)
-		// 第一个参数表示的方法名，第二个参数表示的是方法的参数的class类型
 		Method m1 = c.getMethod("show");
 		// obj.m1(); // 错误
 		// public Object invoke(Object obj,Object... args)

@@ -1,4 +1,4 @@
-package Others.Reflection.demo_01;
+package lang.reflect.Reflect;
 
 /*
  * 反射：就是通过class文件对象，去使用该文件中的成员变量，构造方法，成员方法。
@@ -34,12 +34,13 @@ public class ReflectDemo {
 
 		System.out.println(p == p2);// false
 		System.out.println(c == c2);// true
+
 		// 方式二
 		Class c3 = Person.class;
 		System.out.println(c3 == c);
 
 		// 方式三
-		Class c4 = Class.forName("api.reflect.demo_01.Person");
-		System.out.println(c == c4);
+		Class c4 = Class.forName("lang.reflect.Reflect.Person");
+		System.out.println(c == c4);// true
 	}
 }

@@ -1,5 +1,8 @@
-package Others.Reflection.demo_01;
+package lang.reflect.Reflect;
 
+/*
+ * 本类中有一些DeadCode，仅用于演示反射机制
+ */
 public class Person {
 	private String name;
 	int age;
@@ -41,7 +44,6 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", age=" + age + ", address=" + address
-				+ "]";
+		return "Person [name=" + name + ", age=" + age + ", address=" + address + "]";
 	}
 }
