@@ -1,4 +1,5 @@
 package Others.DataType;
+
 /*
 使用变量的时候要注意的问题：
 	A:作用域
@@ -27,7 +28,7 @@ public class DataTypeDemo2 {
 		// int x = 200;
 
 		// 定义变量必须给值
-		// int y;
+		int y;
 		// System.out.println(y);
 
 		int z;
@@ -41,11 +42,12 @@ public class DataTypeDemo2 {
 		int b = 20;
 		int c = 30;
 
-		// int d, e;
-		// d = 40;
-		// e = 50;
+		int d, e;
+		d = 40;
+		e = 50;
 
 		// int f,int g; //错误
-		// int h; int i; //正确
+		int h;
+		int i; // 正确
 	}
 }

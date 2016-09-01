@@ -1,4 +1,5 @@
 package Others.DataType;
+
 /*
 	+是一个运算符。做加法运算的。
 
@@ -14,7 +15,7 @@ package Others.DataType;
 public class DataTypeDemo3 {
 	public static void main(String[] args) {
 		// 直接输出的方式做加法
-		// System.out.println(3 + 4);
+		System.out.println(3 + 4);
 
 		// 两个int类型做加法
 		int x = 3;

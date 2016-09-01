@@ -1,10 +1,11 @@
 package Others.DataType;
+
 /*
 数据类型：Java是一种强类型的语言，针对每一种数据都定义了明确的数据类型。
 
 数据类型分类：
 	A:基本数据类型
-	B:引用数据类型(类,接口,数值)
+	B:引用数据类型(类,接口,数组)
 	
 基本数据类型:4类8种
 	A:整数			占用字节数
@@ -29,7 +30,7 @@ package Others.DataType;
 		长整型后缀用L或者l标记。建议使用L。
 		单精度浮点数用F或者f标记。建议使用F。
 */
-public class DataTypeDemo {
+public class DataTypeDemo1 {
 	public static void main(String[] args) {
 		// 定义变量的格式：
 		// 数据类型 变量名 = 初始化值;
