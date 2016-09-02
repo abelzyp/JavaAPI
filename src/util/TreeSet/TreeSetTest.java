@@ -10,7 +10,7 @@ import java.util.TreeSet;
  * 分析：
  * 		A:定义学生类
  * 		B:创建一个TreeSet集合
- * 		C:总分从高到底如何实现呢?		
+ * 		C:总分从高到底如何实现呢?
  * 		D:键盘录入5个学生信息
  * 		E:遍历TreeSet集合
  */

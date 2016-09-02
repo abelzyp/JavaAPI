@@ -8,6 +8,7 @@ import java.util.List;
  * 
  * 注意事项：
  * 		虽然可以把数组转成集合，但是集合的长度不能改变。
+ * 		增删不可以，修改可以，只要长度不变就行。
  */
 public class ArraysDemo2 {
 	public static void main(String[] args) {

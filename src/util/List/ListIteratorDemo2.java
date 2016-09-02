@@ -1,6 +1,7 @@
 package util.List;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
@@ -26,6 +27,15 @@ public class ListIteratorDemo2 {
 		list.add("hello");
 		list.add("world");
 		list.add("java");
+
+		// 迭代器遍历，此方法有错误
+		Iterator it = list.iterator();
+		while (it.hasNext()) {
+			String s = (String) it.next();
+			if ("world".equals(s)) {
+				list.add("javaee");
+			}
+		}
 
 		// 方式1：迭代器迭代元素，迭代器修改元素
 		// 而Iterator迭代器却没有添加功能，所以我们使用其子接口ListIterator

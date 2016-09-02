@@ -17,7 +17,7 @@ import java.util.Collection;
  * 		B:内容不同
  * 			数组存储的是同一种类型的元素
  * 			而集合可以存储不同类型的元素
- * 		C:元素的数据类型问题	
+ * 		C:元素的数据类型问题
  * 			数组可以存储基本数据类型，也可以存储引用数据类型
  * 			集合只能存储引用类型
  * 
@@ -28,7 +28,7 @@ import java.util.Collection;
  * 
  * 数据结构：数据的存储方式。
  * 
- * Collection:是集合的顶层接口，它的子体系有重复的，有唯一的，有有序的，有无序的。(后面会慢慢的讲解)
+ * Collection:是集合的顶层接口，它的子体系有重复的，有唯一的，有有序的，有无序的。
  * 
  * Collection的功能概述：
  * 1：添加功能
@@ -52,11 +52,16 @@ import java.util.Collection;
  * 7：把集合转换为数组
  * 		Object[] toArray()
  */
-public class CollectionDemo {
+public class CollectionDemo1 {
 	public static void main(String[] args) {
+		// 测试不带All的方法
+
+		// 创建集合对象
+		// Collection c = new Collection(); //错误，因为接口不能实例化
 		Collection c = new ArrayList();
 
 		// boolean add(Object obj):添加一个元素
+		// System.out.println("add:"+c.add("hello"));
 		c.add("hello");
 		c.add("world");
 		c.add("java");
@@ -65,18 +70,19 @@ public class CollectionDemo {
 		// c.clear();
 
 		// boolean remove(Object o):移除一个元素
-		// c.remove("world");
+		System.out.println("remove:" + c.remove("hello"));
+		System.out.println("remove:" + c.remove("javaee"));
 
 		// boolean contains(Object o)：判断集合中是否包含指定的元素
-		System.out.println(c.contains("java"));
-		System.out.println(c.contains("javaEE"));
+		System.out.println("contains:" + c.contains("hello"));
+		System.out.println("contains:" + c.contains("android"));
 
 		// boolean isEmpty()：判断集合是否为空
-		System.out.println(c.isEmpty());
+		System.out.println("isEmpty:" + c.isEmpty());
 
 		// int size():元素的个数
-		System.out.println(c.size());
+		System.out.println("size:" + c.size());
 
-		System.out.println("C:" + c);
+		System.out.println("c:" + c);
 	}
 }

@@ -18,17 +18,17 @@ import static java.lang.Math.max;
 
 public class StaticImportDemo {
 	public static void main(String[] args) {
-		// System.out.println(java.lang.Math.abs(-100));
-		// System.out.println(java.lang.Math.pow(2, 3));
-		// System.out.println(java.lang.Math.max(20, 30));
+		System.out.println(java.lang.Math.abs(-100));
+		System.out.println(java.lang.Math.pow(2, 3));
+		System.out.println(java.lang.Math.max(20, 30));
 		// 太复杂，我们就引入到import
 
-		// System.out.println(Math.abs(-100));
-		// System.out.println(Math.pow(2, 3));
-		// System.out.println(Math.max(20, 30));
+		System.out.println(Math.abs(-100));
+		System.out.println(Math.pow(2, 3));
+		System.out.println(Math.max(20, 30));
 		// 太复杂，有更简单
 
-		// System.out.println(abs(-100));
+		// System.out.println(abs(-100));//由于我们自己实现了一个abs()方法，所以使用的时候又需要加前缀
 		System.out.println(java.lang.Math.abs(-100));
 		System.out.println(pow(2, 3));
 		System.out.println(max(20, 30));

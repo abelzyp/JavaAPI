@@ -18,17 +18,29 @@ import utils.Person;
  */
 public class CollectionTest3 {
 	public static void main(String[] args) {
+		// 创建集合对象
 		Collection c = new ArrayList();
-		Person p1 = new Person("a",1);
-		Person p2 = new Person("b",2);
-		Person p3 = new Person("c",3);
-		c.add(p1);
-		c.add(p2);
-		c.add(p3);
+
+		// 创建学生对象
+		Person s1 = new Person("貂蝉", 25);
+		Person s2 = new Person("小乔", 16);
+		Person s3 = new Person("黄月英", 20);
+		Person s4 = new Person();
+		s4.setName("大乔");
+		s4.setAge(26);
+
+		// 把学生对象添加到集合对象中
+		c.add(s1);
+		c.add(s2);
+		c.add(s3);
+		c.add(s4);
+		c.add(new Person("孙尚香", 18)); // 匿名对象
+
+		// 遍历集合
 		Iterator it = c.iterator();
-		while(it.hasNext()){
-			Person p = (Person)it.next();
-			System.out.println(p.getName()+"==="+p.getAge());
+		while (it.hasNext()) {
+			Person s = (Person) it.next();
+			System.out.println(s.getName() + "---" + s.getAge());
 		}
 	}
 }

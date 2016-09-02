@@ -11,9 +11,10 @@ import java.util.List;
  */
 public class ListDemo {
 	public static void main(String[] args) {
+		// 创建集合对象
 		List list = new ArrayList();
-		list.add("hello");
-		list.add("abel");
+
+		// 创建字符串并添加字符串
 		list.add("hello");
 		list.add("world");
 		list.add("java");
@@ -22,6 +23,7 @@ public class ListDemo {
 		list.add("javaee");
 		list.add("android");
 
+		// 遍历集合
 		Iterator it = list.iterator();
 		while (it.hasNext()) {
 			String s = (String) it.next();

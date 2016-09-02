@@ -15,12 +15,20 @@ import java.util.Iterator;
  */
 public class CollectionTest2 {
 	public static void main(String[] args) {
+		// 创建集合对象
 		Collection c = new ArrayList();
+
+		// 创建字符串对象，并把字符串对象添加到集合中
 		c.add("hello");
 		c.add("abel");
+
+		// 遍历集合
+		// 通过集合对象获取迭代器对象
 		Iterator it = c.iterator();
-		while(it.hasNext()){
-			String s = (String)it.next();
+		// 通过迭代器对象的hasNext()方法判断有没有元素
+		while (it.hasNext()) {
+			// 通过迭代器对象的next()方法获取元素
+			String s = (String) it.next();
 			System.out.println(s);
 		}
 	}

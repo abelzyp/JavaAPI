@@ -22,15 +22,15 @@ public class CollectionTest {
 		Person p1 = new Person("zhangSan", 11);
 		Person p2 = new Person("liSi", 22);
 		Person p3 = new Person("wangWu", 33);
-		
+
 		c.add(p1);
 		c.add(p2);
 		c.add(p3);
-		
+
 		Object[] objs = c.toArray();
-		for(int i =0;i<objs.length;i++){
+		for (int i = 0; i < objs.length; i++) {
 			Person p = (Person) objs[i];
-			System.out.println(p.getName()+"-"+p.getAge());
+			System.out.println(p.getName() + "-" + p.getAge());
 		}
 	}
 }

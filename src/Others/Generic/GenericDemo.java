@@ -31,23 +31,30 @@ import java.util.Iterator;
  */
 public class GenericDemo {
 	public static void main(String[] args) {
-		ArrayList<String> list = new ArrayList<String>();
-		list.add("hello");
-		list.add("world");
-		list.add("java");
-		Iterator<String> it = list.iterator();
-		while(it.hasNext()){
+		// 创建
+		ArrayList<String> array = new ArrayList<String>();
+
+		// 添加元素
+		array.add("hello");
+		array.add("world");
+		array.add("java");
+		// array.add(new Integer(100));
+		// array.add(10); // JDK5以后的自动装箱
+		// 等价于：array.add(Integer.valueOf(10));
+
+		// 遍历
+		Iterator<String> it = array.iterator();
+		while (it.hasNext()) {
+			// ClassCastException
+			// String s = (String) it.next();
 			String s = it.next();
 			System.out.println(s);
 		}
-		System.out.println("------");
-		for(int i = 0;i<list.size();i++){
-			String s = list.get(i);
-			System.out.println(s);
-		}
-		System.out.println("-----");
-		for(String s : list){
-			System.out.println(s);
-		}
+
+		// 看下面这个代码
+		// String[] strArray = new String[3];
+		// strArray[0] = "hello";
+		// strArray[1] = "world";
+		// strArray[2] = 10;
 	}
 }

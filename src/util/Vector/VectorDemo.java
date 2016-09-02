@@ -10,8 +10,8 @@ import java.util.Vector;
  * 2：获取功能
  * 		public Object elementAt(int index)		--  get()
  * 		public Enumeration elements()			--	Iterator iterator()
- * 		boolean hasMoreElements()				hasNext()
- * 		Object nextElement()					next()
+ * 			boolean hasMoreElements()				hasNext()
+ * 			Object nextElement()					next()
  * 
  * JDK升级的原因：
  * 		A:安全
@@ -20,21 +20,25 @@ import java.util.Vector;
  */
 public class VectorDemo {
 	public static void main(String[] args) {
-		Vector<String> v = new Vector<String>();
-		v.add("hello");
-		v.add("world");
-		v.add("java");
+		// 创建集合对象
+		Vector v = new Vector();
 
-		for (int i = 0; i < v.size(); i++) {
-			String s = v.get(i);
+		// 添加功能
+		v.addElement("hello");
+		v.addElement("world");
+		v.addElement("java");
+
+		// 遍历
+		for (int x = 0; x < v.size(); x++) {
+			String s = (String) v.elementAt(x);
 			System.out.println(s);
 		}
-		System.out.println("-----");
-		v.addElement("hi");
-		v.addElement("abel");
-		Enumeration<String> e = v.elements();// 返回的是实现类的对象
-		while (e.hasMoreElements()) {
-			String s = e.nextElement();
+
+		System.out.println("------------------");
+
+		Enumeration en = v.elements(); // 返回的是实现类的对象
+		while (en.hasMoreElements()) {
+			String s = (String) en.nextElement();
 			System.out.println(s);
 		}
 	}

@@ -18,8 +18,9 @@ import utils.Person;
  * 
  * 		注意：ListIterator可以实现逆向遍历，但是必须先正向遍历，才能逆向遍历，所以一般无意义，不使用。
  */
-public class ListIteratorDemo {
+public class ListIteratorDemo1 {
 	public static void main(String[] args) {
+		// 创建List集合对象并添加元素
 		List list = new ArrayList();
 		Person p1 = new Person("zhangSan", 11);
 		Person p2 = new Person("liSi", 22);
