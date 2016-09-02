@@ -10,14 +10,15 @@ import java.util.Calendar;
 public class Calendar_getInstance {
 	public static void main(String[] args) {
 		// 其日历字段已由当前日期和时间初始化：
-		Calendar c = Calendar.getInstance();
-		System.out.println(c);
-		
-		//Calendar cc = new Calendar();//错误的
-		
-		int year = c.get(Calendar.YEAR);
-		int month = c.get(Calendar.MONTH);
-		int day = c.get(Calendar.DATE);
-		System.out.println(year + "年" + (month + 1) + "月" + day + "日");
+		Calendar rightNow = Calendar.getInstance(); // 子类对象
+
+		// 获取年
+		int year = rightNow.get(Calendar.YEAR);
+		// 获取月
+		int month = rightNow.get(Calendar.MONTH);
+		// 获取日
+		int date = rightNow.get(Calendar.DATE);
+
+		System.out.println(year + "年" + (month + 1) + "月" + date + "日");
 	}
 }

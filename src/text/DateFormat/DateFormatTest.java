@@ -19,16 +19,27 @@ import java.util.Scanner;
  */
 public class DateFormatTest {
 	public static void main(String[] args) throws ParseException {
+		// 键盘录入你的出生的年月日
 		Scanner sc = new Scanner(System.in);
-		System.out.println("输入你的出生年月日(yyyy-MM-dd)：");
-		String birthday = sc.nextLine();
+		System.out.println("请输入你的出生年月日:");
+		String line = sc.nextLine();
 
+		// 把该字符串转换为一个日期
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-		Date d = sdf.parse(birthday);
+		Date d = sdf.parse(line);
+
+		// 通过该日期得到一个毫秒值
 		long myTime = d.getTime();
+
+		// 获取当前时间的毫秒值
 		long nowTime = System.currentTimeMillis();
+
+		// 用D-C得到一个毫秒值
 		long time = nowTime - myTime;
-		long day = time/1000/60/60/24;
-		System.out.println("你已经在世界上活了"+day+"天了。");
+
+		// 把E的毫秒值转换为年
+		long day = time / 1000 / 60 / 60 / 24;
+
+		System.out.println("你来到这个世界：" + day + "天");
 	}
 }

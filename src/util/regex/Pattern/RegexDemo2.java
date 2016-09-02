@@ -17,14 +17,14 @@ import java.util.Arrays;
 public class RegexDemo2 {
 	public static void main(String[] args) {
 		String s = "91 27 46 38 50";
-		String[] strArray =  s.split(" ");
+		String[] strArray = s.split(" ");
 		int[] arr = new int[strArray.length];
-		for(int i =0;i<strArray.length;i++){
+		for (int i = 0; i < strArray.length; i++) {
 			arr[i] = Integer.parseInt(strArray[i]);
 		}
 		Arrays.sort(arr);
 		StringBuilder sb = new StringBuilder();
-		for(int i =0;i<arr.length;i++){
+		for (int i = 0; i < arr.length; i++) {
 			sb.append(arr[i]).append(" ");
 		}
 		System.out.println(sb.toString().trim());

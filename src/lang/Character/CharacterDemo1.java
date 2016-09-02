@@ -6,7 +6,7 @@ package lang.Character;
  * 
  * 构造方法： Character(char value)
  */
-public class Character_Constructor {
+public class CharacterDemo1 {
 
 	public static void main(String[] args) {
 		Character ch = new Character('a');

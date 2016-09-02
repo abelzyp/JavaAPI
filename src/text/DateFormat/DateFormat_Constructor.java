@@ -34,14 +34,14 @@ public class DateFormat_Constructor {
 		// 创建日期对象
 		Date d = new Date();
 		// 创建格式化对象
-		//SimpleDateFormat sdf = new SimpleDateFormat();
+		// SimpleDateFormat sdf = new SimpleDateFormat();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 HH时mm分ss秒");
 		// 给定模式
 		System.out.println(sdf.format(d));
-		
-		//String -- Date
+
+		// String -- Date
 		String source = "2015年11月23日 10时51分33秒";
-		//在把一个字符串解析为日期的时候，请注意格式必须和给定的字符串格式匹配
+		// 在把一个字符串解析为日期的时候，请注意格式必须和给定的字符串格式匹配
 		DateFormat df = new SimpleDateFormat("yyyy年MM月dd日 HH时mm分ss秒");
 		Date dd = df.parse(source);
 		System.out.println(dd);

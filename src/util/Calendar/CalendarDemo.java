@@ -17,13 +17,18 @@ import java.util.Scanner;
  */
 public class CalendarDemo {
 	public static void main(String[] args) {
-		@SuppressWarnings("resource")
+		// 键盘录入任意的年份
 		Scanner sc = new Scanner(System.in);
-		System.out.println("录入年份：");
+		System.out.println("请输入年份：");
 		int year = sc.nextInt();
+
+		// 设置日历对象的年月日
 		Calendar c = Calendar.getInstance();
-		c.set(year, 2, 1);
+		c.set(year, 2, 1); // 其实是这一年的3月1日
+		// 把时间往前推一天，就是2月的最后一天
 		c.add(Calendar.DATE, -1);
+
+		// 获取这一天输出即可
 		System.out.println(c.get(Calendar.DATE));
 	}
 }

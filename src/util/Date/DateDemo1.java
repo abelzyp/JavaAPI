@@ -9,16 +9,16 @@ import java.util.Date;
  * 		Date():根据当前的默认毫秒值创建日期对象
  * 		Date(long date)：根据给定的毫秒值创建日期对象
  */
-public class Date_Constructor {
+public class DateDemo1 {
 	public static void main(String[] args) {
+		// 创建对象
 		Date d = new Date();
-		System.out.println(d);
-		
-		long time = 1000*60*60;
-		Date dd = new Date(time);
-		System.out.println(dd);
-		
-		Date ddd = new Date(0);
-		System.out.println(ddd);
+		System.out.println("d:" + d);
+
+		// 创建对象
+		// long time = System.currentTimeMillis();
+		long time = 1000 * 60 * 60; // 1小时
+		Date d2 = new Date(time);
+		System.out.println("d2:" + d2);
 	}
 }

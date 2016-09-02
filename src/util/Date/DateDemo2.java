@@ -12,14 +12,19 @@ import java.util.Date;
  * 		构造方法
  * 		setTime(long time)
  */
-public class Date_getTime {
+public class DateDemo2 {
 	public static void main(String[] args) {
+		// 创建对象
 		Date d = new Date();
+
+		// 获取时间
 		long time = d.getTime();
 		System.out.println(time);
-		System.out.println(System.currentTimeMillis());
-		
-		d.setTime(0);
-		System.out.println(d);
+		// System.out.println(System.currentTimeMillis());
+
+		System.out.println("d:" + d);
+		// 设置时间
+		d.setTime(1000);
+		System.out.println("d:" + d);
 	}
 }
