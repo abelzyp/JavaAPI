@@ -12,7 +12,7 @@ import java.io.File;
  * 		File(String parent, String child):根据一个目录和一个子文件/目录得到File对象
  * 		File(File parent, String child):根据一个父File对象和一个子文件/目录得到File对象
  */
-public class FileDemo {
+public class FileDemo1 {
 	public static void main(String[] args) {
 		// File(String pathname)：根据一个路径得到File对象
 		// 把e:\\demo\\a.txt封装成一个File对象

@@ -15,7 +15,7 @@ import java.io.File;
  * 				否：不搭理它
  * 			否：不搭理它
  */
-public class FileTest {
+public class FileTest1 {
 	public static void main(String[] args) {
 		// 封装e判断目录
 		File file = new File("e:\\");

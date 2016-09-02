@@ -28,8 +28,7 @@ public class PokerDemo2 {
 		// 定义一个花色数组
 		String[] colors = { "♠", "♥", "♣", "♦" };
 		// 定义一个点数数组
-		String[] numbers = { "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q",
-				"K", "A", "2", };
+		String[] numbers = { "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A", "2", };
 
 		// 从0开始往HashMap里面存储编号，并存储对应的牌,同时往ArrayList里面存储编号即可。
 		int index = 0;
@@ -77,8 +76,7 @@ public class PokerDemo2 {
 	}
 
 	// 写看牌的功能
-	public static void lookPoker(String name, TreeSet<Integer> ts,
-			HashMap<Integer, String> hm) {
+	public static void lookPoker(String name, TreeSet<Integer> ts, HashMap<Integer, String> hm) {
 		System.out.print(name + "的牌是：");
 		for (Integer key : ts) {
 			String value = hm.get(key);

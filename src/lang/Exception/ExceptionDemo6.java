@@ -44,7 +44,7 @@ public class ExceptionDemo6 {
 	// 编译期异常的抛出
 	// 在方法声明上抛出，是为了告诉调用者，你注意了，我有问题。
 	public static void method() throws ParseException {
-		String s = "2014-11-20";
+		String s = "2016-11-20";
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		Date d = sdf.parse(s);
 		System.out.println(d);

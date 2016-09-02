@@ -13,7 +13,7 @@ import java.util.Collections;
  * 		D:发牌
  * 		E:看牌
  */
-public class PokerDemo {
+public class PokerDemo1 {
 	public static void main(String[] args) {
 		// 创建一个牌盒
 		ArrayList<String> array = new ArrayList<String>();
@@ -25,8 +25,7 @@ public class PokerDemo {
 		// 定义一个花色数组
 		String[] colors = { "♥", "♠", "♣", "♦" };
 		// 定义一个点数数组
-		String[] numbers = { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10",
-				"J", "Q", "K" };
+		String[] numbers = { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
 		// 装牌
 		for (String color : colors) {
 			for (String number : numbers) {

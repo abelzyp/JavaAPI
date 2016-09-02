@@ -10,7 +10,7 @@ import java.util.TreeMap;
  * 键：String
  * 值：String
  */
-public class TreeMapDemo {
+public class TreeMapDemo1 {
 	public static void main(String[] args) {
 		// 创建集合对象
 		TreeMap<String, String> tm = new TreeMap<String, String>();
