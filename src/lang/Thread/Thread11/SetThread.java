@@ -22,6 +22,7 @@ public class SetThread implements Runnable {
 						e.printStackTrace();
 					}
 				}
+
 				if (i % 2 == 0) {
 					s.name = "abel";
 					s.age = 24;

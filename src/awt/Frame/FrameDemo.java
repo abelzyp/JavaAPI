@@ -25,7 +25,7 @@ public class FrameDemo {
 		f.setLayout(new FlowLayout());
 
 		// 创建按钮对象
-		Button bu = new Button("点我啊");
+		Button bu = new Button("click me...");
 		// bu.setSize(20, 10);
 
 		// 把按钮添加到窗体
@@ -42,7 +42,7 @@ public class FrameDemo {
 		bu.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				System.out.println("你再点试试");
+				System.out.println("click me again ...");
 			}
 		});
 

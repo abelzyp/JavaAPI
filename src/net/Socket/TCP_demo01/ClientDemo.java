@@ -11,8 +11,8 @@ import java.net.Socket;
  * B:获取输出流，写数据
  * C:释放资源
  * 
- * 连接被拒绝。TCP协议一定要先看服务器。
- * java.net.ConnectException: Connection refused: connect
+ * 连接被拒绝。TCP协议一定要先开服务器。
+ * 		java.net.ConnectException: Connection refused: connect
  */
 public class ClientDemo {
 	public static void main(String[] args) throws IOException {

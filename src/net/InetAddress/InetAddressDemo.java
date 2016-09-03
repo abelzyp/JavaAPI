@@ -1,7 +1,7 @@
 package net.InetAddress;
 
-import java.io.IOException;
 import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 /*
  * 如果一个类没有构造方法：
@@ -13,14 +13,15 @@ import java.net.InetAddress;
  * 
  * 			public static Demo getXxx() {
  * 				return new Demo();
+ * 				//不是单例模式，每调用一次，返回一个新的对象
  * 			}
  * 		}
  * 
  * 看InetAddress的成员方法：
- * public static InetAddress getByName(String host):根据主机名或者IP地址的字符串表示得到IP地址对象
+ * 		public static InetAddress getByName(String host):根据主机名或者IP地址的字符串表示得到IP地址对象
  */
 public class InetAddressDemo {
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws UnknownHostException {
 		// public static InetAddress getByName(String host)
 		// InetAddress address = InetAddress.getByName("DESKTOP-EJULPO4");
 		// InetAddress address = InetAddress.getByName("222.27.254.77");

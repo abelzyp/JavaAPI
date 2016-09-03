@@ -1,5 +1,9 @@
 package lang.Thread.Thread03;
 
+/*
+ * 线程加入
+ * 		public final void join()
+ */
 public class ThreadJoinDemo {
 	public static void main(String[] args) {
 		ThreadJoin tj1 = new ThreadJoin();

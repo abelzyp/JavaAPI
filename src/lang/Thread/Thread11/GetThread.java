@@ -20,6 +20,7 @@ public class GetThread implements Runnable {
 						e.printStackTrace();
 					}
 				}
+
 				System.out.println(s.name + "--" + s.age);
 				s.flag = false;
 				s.notify();

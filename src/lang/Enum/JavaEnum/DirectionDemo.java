@@ -1,4 +1,4 @@
-package lang.Enum;
+package lang.Enum.JavaEnum;
 
 public class DirectionDemo {
 	public static void main(String[] args) {
@@ -16,6 +16,7 @@ public class DirectionDemo {
 		d3.show();
 		System.out.println("--------------");
 
+		// 枚举在switch语句中的使用
 		Direction3 dd = Direction3.FRONT;
 		dd = Direction3.LEFT;
 

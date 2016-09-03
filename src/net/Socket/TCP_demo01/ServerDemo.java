@@ -35,6 +35,6 @@ public class ServerDemo {
 
 		// 释放资源
 		s.close();
-		// ss.close(); //这个不应该关闭
+		ss.close(); // 这个不应该关闭
 	}
 }

@@ -28,9 +28,9 @@ public class ThreadPriorityDemo {
 		tp3.setName("林平之");
 
 		// 获取默认优先级
-		// System.out.println(tp1.getPriority());
-		// System.out.println(tp2.getPriority());
-		// System.out.println(tp3.getPriority());
+		System.out.println(tp1.getPriority());
+		System.out.println(tp2.getPriority());
+		System.out.println(tp3.getPriority());
 
 		// 设置线程优先级
 		// tp1.setPriority(100000);

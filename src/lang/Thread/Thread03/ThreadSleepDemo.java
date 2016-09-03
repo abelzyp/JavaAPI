@@ -1,5 +1,9 @@
 package lang.Thread.Thread03;
 
+/*
+ * public static void sleep(long millis)
+ * 		在指定的毫秒数内让当前正在执行的线程休眠（暂停执行）
+ */
 public class ThreadSleepDemo {
 	public static void main(String[] args) {
 		ThreadSleep ts1 = new ThreadSleep();
