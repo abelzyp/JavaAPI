@@ -1,8 +1,11 @@
 private final char value[];
- 字符串会自动转换为一个字符数组。
+
+字符串会自动转换为一个字符数组。
   
 public int compareTo(String anotherString) {
+	
 	//this -- s1 -- "hello"
+	
 	//anotherString -- s2 -- "hel"
 
     int len1 = value.length; //this.value.length--s1.toCharArray().length--5
@@ -27,5 +30,7 @@ public int compareTo(String anotherString) {
 }
    
    String s1 = "hello";
+   
    String s2 = "hel";
+   
    System.out.println(s1.compareTo(s2)); // 2
